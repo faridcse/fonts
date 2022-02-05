@@ -1,0 +1,63 @@
+/* font face setup start */
+/* @font-face {
+	font-family: logofont;
+	src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+} */
+@font-face {
+	font-family: Playfair;
+	src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+	font-family: Ubuntu;
+	src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+/* font face setup end */
+/* common css start */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/* common css end */
+.container{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header{
+	padding: 75px 0;
+}
+.logo{
+	width: 15%;
+	float: left;
+}
+.logo h1{
+	font-family: 'Inconsolata', monospace;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.menu{
+	width: 70%;
+	float: right;
+}
+
+.menu ul{
+    overflow: hidden;
+    float: right;
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+}
+.menu ul li a{
+	text-transform: uppercase;
+	font-family: Playfair;
+	font-size: 14px;
+	color: #626262;
+	padding: 5px 50px;
+	text-decoration: none;
+	display: inline-block;
+}
+.menu ul li:last-child a{
+	padding-right: 0;
+}
